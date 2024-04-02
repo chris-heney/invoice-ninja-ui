@@ -61,7 +61,7 @@ createRoot(container).render(
     <QueryClientProvider client={queryClient}>
       <Provider store={store}>
         <GoogleOAuth>
-          <Router>
+          <Router basename={import.meta.env.VITE_BASE_URI}>
             <ScrollToTop>
               <App />
             </ScrollToTop>
